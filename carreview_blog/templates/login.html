@@ -1,0 +1,25 @@
+{% extends "base_nav.html" %}
+{% block content %} 
+<div class="login_form">
+<body>
+    <h1 class="head_l">Log-In</h1>
+
+    <div class="container">
+    <form method="POST">
+        {{form.hidden_tag()}}
+        <div class="email">
+        {{form.email.label}}{{form.email(class="text_bar")}}<br>
+        </div>
+        <div class="pwd">
+        {{form.password.label}}{{form.password(class="text_bar")}}<br>  
+        </div> 
+        <!-- <div class="sub_btn"> -->
+        {{form.submit(class="sub_btn")}}
+        <!-- </div>      -->
+    </div>
+
+    </form>
+</body>        
+</div>    
+
+{% endblock %}

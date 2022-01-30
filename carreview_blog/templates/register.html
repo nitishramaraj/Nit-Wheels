@@ -1,0 +1,25 @@
+{% extends "base_nav.html" %}
+{% block content %}
+<div class="reg_form">
+    <h1 class="head_l"> Registration Form </h1>
+    <form method="POST">
+        {{form.hidden_tag()}}
+        <div class="email">
+        {{form.email.label}}{{form.email(class="text_bar")}}<br>
+        </div>
+        <div class="username">
+        {{form.username.label}}{{form.username(class="text_bar")}}<br>
+        </div>
+        <div class="password">
+        {{form.password.label}}{{form.password(class="text_bar")}}<br>
+        </div>
+        <div class="con_password">
+        {{form.pass_confirm.label}}{{form.pass_confirm(class="text_bar")}}<br>
+        </div>
+        <!-- <div class="sub_btn"> -->
+        {{form.submit(class="sub_btn")}}
+    <!-- </div> -->
+
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,316 @@
+/* NAVBAR STYLING STARTS */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    /* overflow-x: hidden; */
+    max-width: 100%;
+
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    font-family: monospace;
+   }
+   .nav-links a {
+    color: #fff;
+    text-decoration: none;
+   }
+  
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    list-style: none;
+    text-decoration: none;
+   }
+   .menu li:hover {
+    color: #000;
+    background-color: grey;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    text-decoration: none;
+    
+   }
+   .menu li {
+    padding: 5px 14px;
+   }
+   /* DROPDOWN MENU */
+
+   footer{
+	/* padding-top: 10%; */
+    position: relative;
+    width: 100%;
+    height:auto;
+    background: #242629;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#footername{
+	padding-top: 1%;
+    color: white;
+    font-size: 2em;
+	font-weight: bold;
+}
+
+#logo{
+    color: #72757e;
+	font-weight: bold;
+    font-size: 1em;
+    padding-bottom: 0.5%;
+}
+
+.social{
+    font-size: 2em;
+    padding-bottom: 1%;
+    transition: transform .6s;
+}
+
+.social:hover{
+    transform: scale(1.2);
+}
+
+#copyright {
+	color: white;
+	padding-bottom: 1%;
+}
+
+/* INFO PAGE */
+.about body{
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+.about{
+    background: url('/static/images/nit.jpg') no-repeat left;
+    height: 30%;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-right: 2%;
+    margin-left: 5%;
+}
+.inner-section{
+    height: 40%;
+    width: 55%;
+    float: right;
+    background-color: black;
+    padding: 100px;
+    box-shadow: 13px 12px 8px rgba(0,0,0,0.3);
+}
+.inner-section h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+}
+.text{
+    font-size: 13px;
+    color: white;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.skills button{
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    width: 200px;
+    background-color: #00999c;
+    color: white;
+    cursor: pointer;
+}
+.skills button:hover{
+    transition: 1s;
+    background-color: #ecf5f5;
+    color: #00999c;
+}
+@media screen and (max-width:1200px){
+    .inner-section{
+        padding: 80px;
+    }
+}
+@media screen and (max-width:1000px){
+    .about{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-section{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about{
+        padding: 0;
+    }
+    .inner-section{
+        padding: 60px;
+    }
+    .skills button{
+        font-size: 19px;
+        padding: 5px;
+        width: 160px;
+    }
+}
+
+
+/* END INFO */
+* .login_form{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    background: black;
+    opacity: 1;
+}
+.login_form{
+    position: relative;
+    top: 10%;
+    left: 35%;
+    width: 350px;
+    justify-content: center;
+    background-color: rgba(0,0,0,1);
+    
+    overflow: hidden;
+    height: 50vh;
+    box-shadow: 10px 10px 5px 12px grey;
+    /* border-radius: 70px; */
+}
+.login_form .head_l{
+    text-align: center;
+    color: white;
+    padding-top: 5%;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.email{
+   padding-top: 5%;
+   padding-left: 13%;
+   color: white;
+}
+
+.pwd{
+    padding-top: 5%;
+    padding-left: 4%;
+    color: white;
+    padding-bottom: 5%;
+}
+
+.sub_btn{
+    text-align: center;
+    background-color: #f10c45;
+    color: white;
+    border: 2px solid transparent;
+    font-weight:bold ;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform .4s;
+    width: 150px;
+    cursor: pointer;
+    position: absolute;
+    left:28%;
+    margin-top: 10px;
+}
+
+.sub_btn:hover{
+    transform: scale(1.2);
+}
+
+.reg_form{
+    position: relative;
+    top: 10%;
+    left: 35%;
+    width: 400px;    justify-content: center;
+    background-color: rgba(0,0,0,1);
+    margin-top: 2.5%;
+    margin-bottom: 10%;
+    
+    overflow: hidden;
+    height: 75vh;
+    box-shadow: 10px 10px 5px 12px grey;
+
+    /* box-shadow: 10px 10px 15px rgba(0,0,0,0.05); */
+    /* border-radius: 50px; */
+}
+
+.reg_form .email{
+    color: white;
+    position: relative;
+    left: 5%;
+}
+
+.reg_form .head_l{
+    text-align: center;
+    color: white;
+    padding-top: 5%;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.reg_form .username{
+    color: white;
+    position: relative;
+    left: 9.5%;
+    padding-top: 5%;
+}
+.reg_form .password{
+    color: white;
+    position: relative;
+    left: 13.5%;
+    padding-top: 5%;
+}
+.reg_form .con_password{
+    color: white;
+    position: relative;
+    left: 5%;
+    padding-top: 5%;
+}
+
+.reg_form .sub_btn{
+    margin-top: 10%;
+}
+
+.text_field{
+    color: red;
+}
+
+/* CARD */
+ 
+
+/* CARD End */
+
+.user_posts{
+    background-color: black;
+}
+
+.text_bar{
+    background-color: grey;
+    padding-left: 2%;
+    margin-left: 3%;
+    caret-color: red;
+    cursor: cell;
+    color:white ;
+
+}
+
+.reg_form .text_bar{
+    padding-left: 5%;
+    margin-left: 5%;
+}
